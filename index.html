@@ -4,83 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPU Blog</title>
+    <style>
+        /* Grundlegendes Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Bild Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Flexbox für den Content */
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .content-section div {
+            flex: 1;
+            min-width: 300px;
+            box-sizing: border-box;
+        }
+
+        /* Media Queries für kleinere Bildschirme */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .content-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Willkommen auf meiner Webseite!</h1>
     </header>
+    
     <main>
-        <h1><p>Hier finden Sie Berichte und Informationen zu verschiedenen CPUs.</p>
-        <p>Die Seite wird regelmäßig aktualisiert, um die neuesten Daten zu bieten.</p>
-        </h1>
-        <br><br>
-        <h1><p>Aktuell im Fokus:</p>
-        <p>Der Intel core I5 2450M</p>
-        </h1>
-        <br>
-        <h2><p>Hier sind einige technische Details:</p>
-        <p>Der Intel Core i5-2450M ist ein mobiler Prozessor der Intel Core i5-Serie, der auf der 3. Generation der Intel Core Architektur basiert. Er wurde für den Einsatz in Laptops und Notebooks entwickelt und bietet eine ausgewogene Leistung für alltägliche Aufgaben sowie einige anspruchsvollere Anwendungen.</p>
-        <p>Der Prozessor verfügt über 2 Kerne und 4 Threads, was eine gute Multitasking-Fähigkeit ermöglicht. Mit einer Basistaktrate von 2,5 GHz und der Fähigkeit, im Turbo Boost-Modus auf bis zu 3,1 GHz zu beschleunigen, bietet er eine solide Leistung für die meisten Anwendungen.</p>
-        <p>Die integrierte Intel HD Graphics 3000 GPU ermöglicht grundlegende Grafikfunktionen und ist für alltägliche Aufgaben wie das Ansehen von Videos und das Surfen im Internet geeignet. Für grafikintensive Anwendungen oder Spiele ist jedoch eine dedizierte Grafikkarte empfehlenswert.</p>
-        <p>Der i5-2450M unterstützt auch Intel Hyper-Threading, was die Effizienz bei der Verarbeitung von parallelen Aufgaben verbessert. Mit einem TDP (Thermal Design Power) von 35 Watt ist er energieeffizient und eignet sich gut für mobile Geräte, die eine längere Akkulaufzeit benötigen.</p>
-        <p>Insgesamt ist der Intel Core i5-2450M eine solide Wahl für Nutzer, die eine ausgewogene Leistung in einem mobilen Gerät suchen, ohne dabei auf hohe Energieeffizienz zu verzichten.</p>
-        </h2>
-        <h1><p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></h1>
-        <h3><p>ich hab Hier noch eine übersicht:</p></h3>
-        <img src="C:\Bench.tangmuzhul.de\knu9rk.png" alt="CPU Übersicht" style="width: 50%; height: auto;">
+        <section>
+            <h2>Hier finden Sie Berichte und Informationen zu verschiedenen CPUs.</h2>
+            <p>Die Seite wird regelmäßig aktualisiert, um die neuesten Daten zu bieten.</p>
+        </section>
+
+        <section>
+            <h2>Aktuell im Fokus:</h2>
+            <h3>Der Intel Core i5-2450M</h3>
+            <p>Der Intel Core i5-2450M ist ein mobiler Prozessor der Intel Core i5-Serie...</p>
+            <p>Der Prozessor verfügt über 2 Kerne und 4 Threads, was eine gute Multitasking-Fähigkeit ermöglicht...</p>
+        </section>
+
+        <section>
+            <h3>Hier sind einige technische Details:</h3>
+            <p>Die integrierte Intel HD Graphics 3000 GPU ermöglicht grundlegende Grafikfunktionen...</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Aktuell im Fokus: Intel Core i5-8400H</h3>
+            <p>Der Intel Core i5-8400H ist ein mobiler Prozessor der 8. Generation...</p>
+        </section>
+
+        <section class="content-section">
+            <div>
+                <h3>Neues Von AMD!</h3>
+                <h2>Der AMD Ryzen 5 5600H</h2>
+                <p>Der AMD Ryzen 5 5600H ist ein mobiler Prozessor...</p>
+            </div>
+            <div>
+                <h3>Neuigkeiten von Intel!</h3>
+                <h2>Der Intel Core i7-12700H</h2>
+                <p>Der Intel Core i7-12700H ist ein mobiler Prozessor der 12. Generation...</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Was ganz Neues von AMD!</h3>
+            <h2>Der AMD Ryzen Threadripper</h2>
+            <p>Der AMD Ryzen Threadripper ist eine Serie von Hochleistungsprozessoren...</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Hier noch eine Übersicht:</h3>
+            <img src="C:\Bench.tangmuzhul.de\knu9rk.png" alt="CPU Übersicht">
+        </section>
 
     </main>
-    <footer>
-        <h1><p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></h1>
-    </footer>
-    <main2>
-            <h1>NEU!</h1>
-            <h1>DER INTEL CORE I5 8400H</h1>
-            <h2>Hier sind einige technische Details:</h2>
-            <p>Der Intel Core i5-8400H ist ein mobiler Prozessor der 8. Generation der Intel Core-Serie, der für leistungsstarke Laptops und Notebooks entwickelt wurde. Er bietet eine Kombination aus hoher Leistung und Energieeffizienz, ideal für Gaming, Multimedia-Anwendungen und produktive Aufgaben.</p>
-            <p>Der i5-8400H verfügt über 4 Kerne und 8 Threads, was eine hervorragende Multitasking-Fähigkeit ermöglicht. Mit einer Basistaktrate von 2,5 GHz und der Fähigkeit, im Turbo Boost-Modus auf bis zu 4,2 GHz zu beschleunigen, bietet er eine beeindruckende Leistung für anspruchsvolle Anwendungen.</p>
-            <p>Die integrierte Intel UHD Graphics 630 GPU ermöglicht grundlegende Grafikfunktionen und ist für alltägliche Aufgaben wie das Ansehen von Videos und das Surfen im Internet geeignet. Für grafikintensive Anwendungen oder Spiele ist jedoch eine dedizierte Grafikkarte empfehlenswert.</p>
-            <p>Der i5-8400H unterstützt Intel Hyper-Threading, was die Effizienz bei der Verarbeitung von parallelen Aufgaben verbessert. Mit einem TDP (Thermal Design Power) von 45 Watt ist er energieeffizient und eignet sich gut für mobile Geräte, die eine längere Akkulaufzeit benötigen.</p>
-            <p>Insgesamt ist der Intel Core i5-8400H eine ausgezeichnete Wahl für Nutzer, die eine hohe Leistung in einem mobilen Gerät suchen, sei es für Gaming, Multimedia oder produktive Anwendungen.</p>
-            <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-            <h1>Neues Von AMD!</h1>
-            <h2>Der AMD Ryzen 5 5600H</h2>
-            <p>Der AMD Ryzen 5 5600H ist ein mobiler Prozessor der AMD Ryzen 5000-Serie, der für leistungsstarke Laptops und Notebooks entwickelt wurde. Er bietet eine Kombination aus hoher Leistung und Energieeffizienz, ideal für Gaming, Multimedia-Anwendungen und produktive Aufgaben.</p>
-            <p>Der Ryzen 5 5600H verfügt über 6 Kerne und 12 Threads, was eine hervorragende Multitasking-Fähigkeit ermöglicht. Mit einer Basistaktrate von 3,2 GHz und der Fähigkeit, im Boost-Modus auf bis zu 4,2 GHz zu beschleunigen, bietet er eine beeindruckende Leistung für anspruchsvolle Anwendungen.</p>
-            <p>Die integrierte AMD Radeon Graphics ermöglicht grundlegende Grafikfunktionen und ist für alltägliche Aufgaben wie das Ansehen von Videos und das Surfen im Internet geeignet. Für grafikintensive Anwendungen oder Spiele ist jedoch eine dedizierte Grafikkarte empfehlenswert.</p>
-            <p>Der Ryzen 5 5600H unterstützt AMD Simultaneous Multithreading (SMT), was die Effizienz bei der Verarbeitung von parallelen Aufgaben verbessert. Mit einem TDP (Thermal Design Power) von 45 Watt ist er energieeffizient und eignet sich gut für mobile Geräte, die eine längere Akkulaufzeit benötigen.</p>
-            <p>Insgesamt ist der AMD Ryzen 5 5600H eine ausgezeichnete Wahl für Nutzer, die eine hohe Leistung in einem mobilen Gerät suchen, sei es für Gaming, Multimedia oder produktive Anwendungen.</p>
-            <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-             <h1>Neuigkeiten von Intel!</h1>
-            <h2>Der Intel Core i7-12700H</h2>
-            <p>Der Intel Core i7-12700H ist ein mobiler Prozessor der 12. Generation der Intel Core-Serie, der für leistungsstarke Laptops und Notebooks entwickelt wurde. Er bietet eine Kombination aus hoher Leistung und Energieeffizienz, ideal für Gaming, Multimedia-Anwendungen und produktive Aufgaben.</p>
-            <p>Der i7-12700H verfügt über 14 Kerne (6 Performance-Kerne und 8 Effizienz-Kerne) und 20 Threads, was eine hervorragende Multitasking-Fähigkeit ermöglicht. Mit einer Basistaktrate von 2,3 GHz und der Fähigkeit, im Turbo Boost-Modus auf bis zu 4,7 GHz zu beschleunigen, bietet er eine beeindruckende Leistung für anspruchsvolle Anwendungen.</p>
-            <p>Die integrierte Intel Iris Xe Graphics ermöglicht grundlegende Grafikfunktionen und ist für alltägliche Aufgaben wie das Ansehen von Videos und das Surfen im Internet geeignet. Für grafikintensive Anwendungen oder Spiele ist jedoch eine dedizierte Grafikkarte empfehlenswert.</p>
-            <p>Der i7-12700H unterstützt Intel Hyper-Threading, was die Effizienz bei der Verarbeitung von parallelen Aufgaben verbessert. Mit einem TDP (Thermal Design Power) von 45 Watt ist er energieeffizient und eignet sich gut für mobile Geräte, die eine längere Akkulaufzeit benötigen.</p>
-            <p>Insgesamt ist der Intel Core i7-12700H eine ausgezeichnete Wahl für Nutzer, die eine hohe Leistung in einem mobilen Gerät suchen, sei es für Gaming, Multimedia oder produktive Anwendungen.</p>
-            <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-             <h1>Was ganz Neues von AMD!</h1>
-            <h2>Der AMD Ryzen Theradripper</h2>
-            <p>Der AMD Ryzen Threadripper ist eine Serie von Hochleistungsprozessoren, die speziell für Workstations und High-End-Desktop-PCs entwickelt wurde. Diese Prozessoren bieten eine außergewöhnliche Leistung für rechenintensive Anwendungen wie 3D-Rendering, Videobearbeitung, wissenschaftliche Simulationen und mehr.</p>
-            <p>Die Threadripper-Prozessoren verfügen über eine hohe Anzahl von Kernen und Threads, was eine hervorragende Multitasking-Fähigkeit ermöglicht. Zum Beispiel bietet der AMD Ryzen Threadripper 3990X beeindruckende 64 Kerne und 128 Threads, was ihn zu einem der leistungsstärksten Prozessoren auf dem Markt macht.</p>
-            <p>Die Architektur der Threadripper-Prozessoren basiert auf der Zen-Architektur von AMD, die eine hohe Energieeffizienz und Leistung pro Takt bietet. Diese Prozessoren unterstützen auch PCIe 4.0, was schnellere Datenübertragungsraten für Grafikkarten und NVMe-SSDs ermöglicht.</p>
-            <p>Die integrierte AMD Radeon Graphics ermöglicht grundlegende Grafikfunktionen, aber für grafikintensive Anwendungen oder Spiele ist eine dedizierte Grafikkarte empfehlenswert.</p>
-            <p>Die Threadripper-Prozessoren sind mit einem hohen TDP (Thermal Design Power) ausgestattet, was bedeutet, dass sie eine leistungsstarke Kühlung benötigen, um ihre volle Leistung zu entfalten. Sie sind ideal für Nutzer, die maximale Rechenleistung in einem Desktop-PC benötigen.</p>
-            <p>Insgesamt sind die AMD Ryzen Threadripper-Prozessoren eine ausgezeichnete Wahl für professionelle Anwender und Power-User, die eine hohe Leistung für rechenintensive Aufgaben suchen.</p>  
-            <h1>---------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-    </main2>
-    <preend>
-        <h4>Neues kommt bald!</h4>
-    </preend>
-    <end>
-        <p>Besuchen Sie uns bald wieder!</p>
-        <p> Kontakt: <a href="mailto:tangmu@minekraft.org">Tangmuzhul</p></a>
-        <br>
-        <p>Für weitere Informationen besuchen Sie bitte unsere <a href="https://github.com/tangmuzhul-YT/CPU-Blog">GitHub-Seite</a>.</p>
-        <p>&copy; 2025/2026 CPU Blog (by tangmuzhul)</p>
-        <br>
-        <p>Diese Seite ist ein Hobbyprojekt und dient nur zu Informationszwecken.</p> 
-    </end>
 
-    </body>
-    </html>
+    <footer>
+        <p>&copy; 2025/2026 CPU Blog (by tangmuzhul)</p>
+        <p>Diese Seite ist ein Hobbyprojekt und dient nur zu Informationszwecken.</p>
+        <p>Kontakt: <a href="mailto:tangmu@minekraft.org">Tangmuzhul</a></p>
+        <p>Für weitere Informationen besuchen Sie bitte unsere <a href="https://github.com/tangmuzhul-YT/CPU-Blog">GitHub-Seite</a>.</p>
+    </footer>
+</body>
+</html>
